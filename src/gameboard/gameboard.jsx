@@ -26,7 +26,7 @@ class GameBoard extends Component {
       },
       () => {
         const seq = utils.getBlocks(this.state.blocks);
-        // console.log(seq);
+        console.log(seq);
         this.setState({ sequence: seq, result: seq, score: seq.length === 4 ? 0 : seq.length - 1 }, () => {
           setTimeout(() => {
             this.setState({ sequence: [] });

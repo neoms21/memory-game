@@ -25,12 +25,14 @@ export const ErrorDiv = styled.div`
   background: #c42d2d;
   color: #fff;
   padding: 8px;
+  margin-bottom: 10px;
 `;
 
 export const SuccessDiv = styled.div`
   background: #21b241;
   color: #fff;
   padding: 8px;
+  margin-bottom: 10px;
 `;
 
 export const Button = styled.button`
