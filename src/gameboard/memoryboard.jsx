@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlocksDiv, MemoryDiv } from './styles';
+import { BlocksDiv, MemoryDiv } from '../styles/styles';
 import Square from '../components/square';
 
 const MemoryBoard = ({ sequence, duration }) => {

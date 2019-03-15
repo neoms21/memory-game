@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Success tests should render null 1`] = `null`;
+
+exports[`Success tests should render success 1`] = `
+.c0 {
+  background: #21b241;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+<div
+  className="c0"
+  id="success"
+>
+  Congratulations!!! you won the game.
+</div>
+`;

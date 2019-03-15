@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 import Square from '../components/square';
 import * as utils from '../utils/utils';
-import { ResultsDiv, BlocksDiv, ErrorDiv, SuccessDiv, Button } from './styles';
+import { ResultsDiv, BlocksDiv, Button } from '../styles/styles';
 import MemoryBoard from './memoryboard';
 import * as constants from '../utils/constants';
+import Success from '../components/success';
+import Failure from '../components/failure';
 
 const resultBlocks = utils.getBlocks(4, true);
 const initialState = {
@@ -64,10 +66,10 @@ class GameBoard extends Component {
           </BlocksDiv>
         </ResultsDiv>
 
-        {this.state.gameOver ? (
-          <ErrorDiv id="error">You lost the game!! you score is {this.state.score}</ErrorDiv>
-        ) : null}
-        {this.state.gameWon ? <SuccessDiv id="success">Congratulations!!! you won the game.</SuccessDiv> : null}
+        <Failure isGameOver={this.state.gameOver} score={this.state.score} />
+
+        <Success isGameWon={this.state.gameWon} />
+
         <MemoryBoard sequence={sequence} duration={constants.MEMORY_SHOW_TIME / 1000} />
         {result.length === 0 && (
           <Button

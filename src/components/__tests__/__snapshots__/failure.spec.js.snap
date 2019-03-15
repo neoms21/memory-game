@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Failure tests should render error 1`] = `
+.c0 {
+  background: #c42d2d;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+<div
+  className="c0"
+  id="error"
+>
+  You lost the game!! you score is 
+  11
+</div>
+`;
+
+exports[`Failure tests should render null 1`] = `null`;
